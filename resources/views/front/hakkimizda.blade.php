@@ -1,0 +1,22 @@
+@extends('layouts.front.fmaster')
+
+@section('title',$data[0]->adi)
+@section('keywords',$data[0]->keywords)
+@section('description',$data[0]->description)
+
+@section('sidebar')
+    @include('front.fsidebar')
+@endsection
+
+@section('content')
+    <hr class="soften">
+    <div>
+        <h1>Hakkımızda</h1>
+    </div>
+    <hr class="soften">
+    <div class="row">
+        <div class="span8">
+            <p>{{$data[0]->hakkimizda}}</p>
+        </div>
+    </div>
+@endsection
